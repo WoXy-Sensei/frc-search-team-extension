@@ -33,7 +33,7 @@ const setTeamData = async (_teamNumber) => {
 };
 
 searchInput.addEventListener("keyup", async (e) => {
-  if (e.target.value.length >= 3) {
+  if (e.target.value.length >= 2) {
     setTeamData(e.target.value);
   }
   if(e.target.value.length === 0){
