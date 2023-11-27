@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  border: 2px solid red;
+  padding: 1rem;
+}
+
+.popup {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popup .title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.popup .author {
+  opacity: 0.3;
+  font-size: 0.8rem;
+  color: #eee;
+}
+.popup .stats-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+.popup .stats-section .stat-value {
+  font-size: 1.5rem;
+}
+.popup .stats-section .stats-row {
+  display: flex;
+  flex-direction: row;
+}
+.popup .stats-section #team-name .stat-value {
+  font-size: 1.6rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+{
+    "name" : "FRC team search",
+    "version" : "1.0",
+    "description" : "FRC team search",
+    "author" : "Bardia Ramez",
+    "website" : "test",
+    "manifest_version" : 3,
+    "action" : {
+        "default_popup" : "index.html",
+        "default_title" : "FRC team search"
+    },
+    "icons":{
+        "16" : "./assets/img/icon.png",
+        "32" : "./assets/img/icon.png",
+        "48" : "./assets/img/icon.png",
+        "128" : "./assets/img/icon.png"
+    
+    }
+}
