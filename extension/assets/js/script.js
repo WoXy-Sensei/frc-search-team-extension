@@ -19,7 +19,10 @@ const theBlueAllianceLink = document.getElementById("theBlueAlliance");
 
 const setTeamData = async (_teamNumber) => {
   const team = await getTeamByNumber(_teamNumber);
-  if(team.name === undefined) return;
+  if(team.name === undefined) {
+    statsSection.style.display = "none";
+    return;
+  };
   teamName.innerText = team.name;
   teamCountry.innerText = team.country;
   teamRookieYear.innerText = team.rookie_year;

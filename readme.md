@@ -18,9 +18,6 @@ To use the extension, follow these steps:
 
 Once the extension is successfully installed, you will see the extension icon in the top right corner of your browser. Click on this icon to search for FRC teams and view detailed information.
 
-## Contribution
-
-If you want to contribute to the development of the extension, please check [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
