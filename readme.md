@@ -1,6 +1,6 @@
 # FRC TEAM SEARCH
 
-![image]('images/image.png')
+![image](./images/image.png)
 
 FRC team search is a Chrome extension that provides easy access to statbotics and the blue alliance by searching for FRC team numbers.
 
