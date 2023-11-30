@@ -14,6 +14,10 @@ To use the extension, follow these steps:
 4. Enable "Developer Mode" in the top right corner.
 5. Click "Load Unpacked" and select the folder you downloaded.
 
+## Chrome Web Store
+
+``https://chromewebstore.google.com/detail/frc-search/fibjbcbjcbhjbibaihgfpenghaebjoaf?hl=en``
+
 ## Usage
 
 Once the extension is successfully installed, you will see the extension icon in the top right corner of your browser. Click on this icon to search for FRC teams and view detailed information.
