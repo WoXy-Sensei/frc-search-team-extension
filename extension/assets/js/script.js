@@ -4,7 +4,7 @@ const getTeamByNumber = async (teamNumber) => {
   return json;
 };
 
-const isShow = false;
+
 const searchInput = document.getElementById("search-input");
 const statsSection = document.getElementById("stats-section");
 const teamCountry = document.getElementById("team-country");
@@ -19,7 +19,7 @@ const theBlueAllianceLink = document.getElementById("theBlueAlliance");
 
 const setTeamData = async (_teamNumber) => {
   const team = await getTeamByNumber(_teamNumber);
-  if(team.name === undefined) {
+  if (team.name === undefined) {
     statsSection.style.display = "none";
     return;
   };
@@ -35,13 +35,20 @@ const setTeamData = async (_teamNumber) => {
   statsSection.style.display = "flex";
 };
 
-searchInput.addEventListener("keyup", async (e) => {
-  if (e.target.value.length >= 1) {
-    setTeamData(e.target.value);
-  }
-  if(e.target.value.length === 0){
-    statsSection.style.display = "none";
-  }
+
+let typingTimer;
+const doneTypingInterval = 300;
+
+searchInput.addEventListener("keyup", (e) => {
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(() => {
+    if (e.target.value.length >= 1) {
+      setTeamData(e.target.value);
+    }
+    if (e.target.value.length === 0) {
+      statsSection.style.display = "none";
+    }
+  }, doneTypingInterval);
 });
 
 statsSection.style.display = "none";
