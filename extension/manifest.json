@@ -1,6 +1,6 @@
 {
     "name" : "FRC Search",
-    "version" : "1.0.1",
+    "version" : "1.0.2",
     "description" : "FRC Search is a chrome extension that allows you to search for FRC teams and events from the comfort of your browser.",
     "author" : "Bardia Ramez",
     "website" : "https://bardiaramez.net/",
