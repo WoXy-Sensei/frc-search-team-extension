@@ -16,7 +16,7 @@ To use the extension, follow these steps:
 
 ## Chrome Web Store
 
-``https://chromewebstore.google.com/detail/frc-search/fibjbcbjcbhjbibaihgfpenghaebjoaf?hl=en``
+[![Chrome Store Download](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/YT2Grfi9vEBa2wAPzhWa.png)](https://chromewebstore.google.com/detail/frc-search/fibjbcbjcbhjbibaihgfpenghaebjoaf)
 
 ## Usage
 
