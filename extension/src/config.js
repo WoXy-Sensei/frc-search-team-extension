@@ -1,0 +1,1 @@
+export const STATBOTICS_BASE_URL = "https://api.statbotics.io/v2"
