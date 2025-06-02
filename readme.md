@@ -93,31 +93,31 @@ See the extension in action! Here are some screenshots showcasing its key featur
 
 
 <p align="center">
-  <img src="https://i.ibb.co/MkF0N7bN/image.png" alt="Search results and basic info" width="400">
+  <img src="https://i.hizliresim.com/l8sm9yc.png" alt="Search results and basic info" width="400">
   <br>
   Search results and basic team information
 </p>
 <hr>
 <p align="center">
-  <img src="https://i.ibb.co/qFJLkSpC/image.png" alt="Ranking charts" width="400">
+  <img src="https://i.hizliresim.com/2jkjnuv.png" alt="Ranking charts" width="400">
   <br>
   Detailed charts displaying the team's country and world rankings
 </p>
 <hr>
 <p align="center">
-  <img src="https://i.ibb.co/Q3g4Y75V/image.png" alt="FRCMaps integration" width="400">
+  <img src="https://i.hizliresim.com/mgr41qc.png" alt="FRCMaps integration" width="400">
   <br>
   The team's location on the interactive <a href="https://frcmaps.com">FRCMaps.com</a> map
 </p>
 <hr>
 <p align="center">
-  <img src="https://i.ibb.co/p6sbp3cJ/image.png" alt="AI overview" width="400">
+  <img src="https://i.hizliresim.com/fobn7qg.png" alt="AI overview" width="400">
   <br>
   The AI-generated team overview powered by DeepSeek
 </p>
 <hr>
 <p align="center">
-  <img src="https://i.ibb.co/ch7pgvBx/image.png" alt="Favorites and groups" width="400">
+  <img src="https://i.hizliresim.com/92anwf7.png" alt="Favorites and groups" width="400">
   <br>
   A view of your favorite teams and created groups
 </p>
