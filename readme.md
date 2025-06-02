@@ -91,11 +91,11 @@ The backend is developed using TypeScript and Express.js on Bun. It utilizes Mon
 
 See the extension in action! Here are some screenshots showcasing its key features and interface.
 
-  * **![Screenshot 1 - Search results and basic info](https://i.ibb.co/ZRcsy2n4/image.png)** - Search results and basic team information.
-  * **![Screenshot 2 - Ranking charts](https://i.ibb.co/wZzYP65y/image.png)** - Detailed charts displaying the team's country and world rankings.
-  * **![Screenshot 3 - FRCMaps integration](https://i.ibb.co/TDFLVVps/image.png)** - The team's location on the interactive [FRCMaps.com](https://frcmaps.com) map.
-  * **![Screenshot 4 - AI overview](https://i.ibb.co/p6sbp3cJ/image.png)** - The AI-generated team overview powered by DeepSeek.
-  * **![Screenshot 5 - Favorites and groups](https://i.ibb.co/NnJV4wGN/image.png)** - A view of your favorite teams and created groups.
+**![Screenshot 1 - Search results and basic info](https://i.ibb.co/ZRcsy2n4/image.png)** - Search results and basic team information.
+**![Screenshot 2 - Ranking charts](https://i.ibb.co/wZzYP65y/image.png)** - Detailed charts displaying the team's country and world rankings.
+**![Screenshot 3 - FRCMaps integration](https://i.ibb.co/TDFLVVps/image.png)** - The team's location on the interactive [FRCMaps.com](https://frcmaps.com) map.
+**![Screenshot 4 - AI overview](https://i.ibb.co/p6sbp3cJ/image.png)** - The AI-generated team overview powered by DeepSeek.
+**![Screenshot 5 - Favorites and groups](https://i.ibb.co/NnJV4wGN/image.png)** - A view of your favorite teams and created groups.
 
 ## Contributing
 
