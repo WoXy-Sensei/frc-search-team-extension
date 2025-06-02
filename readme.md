@@ -1,6 +1,6 @@
 # FRC Search - Browser Extension
 
-![Extension Logo](https://i.ibb.co/6JwhzWth/Untitled-Project-17.png)
+![Extension Logo](https://i.ibb.co/0yrsdf18/icon.png)
 
 **FRC Search** is a powerful browser extension designed to provide you with quick and easy access to comprehensive information about First Robotics Competition (FRC) teams. Built with a speedy and efficient Bun-powered infrastructure, FRC Search allows you to instantly look up team details, keep track of your favorite teams, and stay organized by creating custom groups.
 
