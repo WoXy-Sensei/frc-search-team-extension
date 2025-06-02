@@ -91,11 +91,36 @@ The backend is developed using TypeScript and Express.js on Bun. It utilizes Mon
 
 See the extension in action! Here are some screenshots showcasing its key features and interface.
 
-**![Screenshot 1 - Search results and basic info](https://i.ibb.co/ZRcsy2n4/image.png)** - Search results and basic team information.
-**![Screenshot 2 - Ranking charts](https://i.ibb.co/wZzYP65y/image.png)** - Detailed charts displaying the team's country and world rankings.
-**![Screenshot 3 - FRCMaps integration](https://i.ibb.co/TDFLVVps/image.png)** - The team's location on the interactive [FRCMaps.com](https://frcmaps.com) map.
-**![Screenshot 4 - AI overview](https://i.ibb.co/p6sbp3cJ/image.png)** - The AI-generated team overview powered by DeepSeek.
-**![Screenshot 5 - Favorites and groups](https://i.ibb.co/NnJV4wGN/image.png)** - A view of your favorite teams and created groups.
+
+<p align="center">
+  <img src="https://i.ibb.co/MkF0N7bN/image.png" alt="Search results and basic info" width="400">
+  <br>
+  Search results and basic team information
+</p>
+<hr>
+<p align="center">
+  <img src="https://i.ibb.co/qFJLkSpC/image.png" alt="Ranking charts" width="400">
+  <br>
+  Detailed charts displaying the team's country and world rankings
+</p>
+<hr>
+<p align="center">
+  <img src="https://i.ibb.co/Q3g4Y75V/image.png" alt="FRCMaps integration" width="400">
+  <br>
+  The team's location on the interactive <a href="https://frcmaps.com">FRCMaps.com</a> map
+</p>
+<hr>
+<p align="center">
+  <img src="https://i.ibb.co/p6sbp3cJ/image.png" alt="AI overview" width="400">
+  <br>
+  The AI-generated team overview powered by DeepSeek
+</p>
+<hr>
+<p align="center">
+  <img src="https://i.ibb.co/ch7pgvBx/image.png" alt="Favorites and groups" width="400">
+  <br>
+  A view of your favorite teams and created groups
+</p>
 
 ## Contributing
 
