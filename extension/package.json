@@ -1,0 +1,43 @@
+{
+  "name": "frc-search-extension-new",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:chrome": "vite --mode chrome",
+    "dev:firefox": "vite --mode firefox",
+    "build:chrome": "vite build --mode chrome",
+    "build:firefox": "vite build --mode firefox",
+    "watch:chrome": "vite build --watch --mode chrome",
+    "watch:firefox": "vite build --watch --mode firefox"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.6",
+    "@types/chrome": "^0.0.322",
+    "@unovis/ts": "^1.5.1",
+    "@unovis/vue": "^1.5.1",
+    "@vueuse/core": "^13.2.0",
+    "axios": "^1.9.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-vue": "^8.6.0",
+    "gsap": "^3.13.0",
+    "lucide-vue-next": "^0.510.0",
+    "marked": "^15.0.12",
+    "pinia": "^3.0.2",
+    "reka-ui": "^2.2.1",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss": "^4.1.6",
+    "tw-animate-css": "^1.2.9",
+    "vaul-vue": "^0.4.1",
+    "vite-plugin-static-copy": "^3.0.0",
+    "vue": "^3.5.13",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@iconify-json/radix-icons": "^1.2.2",
+    "@iconify/vue": "^5.0.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "vite": "^6.3.5"
+  }
+}
