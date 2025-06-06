@@ -46,8 +46,6 @@ export const useTeamStore = defineStore("teamStore", () => {
         team.value = teamResponse.data.find((team) => team.year == year);
       }
 
-      isLoading.value = false;
-
       availableYears.value = teamResponse.data.map((d) => {
         return d.year;
       });
@@ -57,6 +55,8 @@ export const useTeamStore = defineStore("teamStore", () => {
 
       const worldChartResponse = await getTeamYearsWorldRanks(teamNumber);
       teamWorldChart.value = worldChartResponse.data;
+
+      isLoading.value = false;
     } catch (err) {
       error.value =
         err?.message || "An error occurred while fetching team data.";
@@ -76,7 +76,6 @@ export const useTeamStore = defineStore("teamStore", () => {
     teamOverview.value = response.data.overview;
 
     teamOverviewIsLoading.value = false;
-
   }
 
   return {

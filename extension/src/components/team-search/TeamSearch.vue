@@ -1,7 +1,7 @@
 <script setup>
 import { TeamInput, YearSelect } from "./input/";
 import TeamSearchList from "./TeamSearchList.vue";
-import { ref, watch, onMounted, computed } from "vue";
+import { ref, watch, onMounted, computed, useTemplateRef } from "vue";
 import { Command } from "@/components/ui/command";
 import { useTeamStore } from "@/stores/teamStore";
 import { useRoute } from "vue-router";
@@ -16,6 +16,8 @@ const teamsLoaded = ref(false);
 const teamStore = useTeamStore();
 const selectedTeamYear = ref(0);
 const route = useRoute();
+const inputRef = useTemplateRef("input");
+
 const selectedTeamRookieYear = computed(() => {
     if (!teamStore.team?.rookie_year) {
         return 1999;
@@ -28,7 +30,6 @@ async function loadTeams() {
         isLoading.value = true;
         const res = await fetch("/teams.json");
         if (!res.ok) throw new Error("Failed to load teams");
-
         const jsonData = await res.json();
         if (jsonData?.teams?.length) {
             allTeams.value = jsonData.teams;
@@ -47,16 +48,13 @@ async function loadTeams() {
 function filterTeams(term) {
     const cleanTerm = term.trim().toLowerCase();
     if (!cleanTerm) return [];
-
     return allTeams.value
         .filter((team) => {
             const name = team.nickname?.toLowerCase() || "";
             const teamNumber = team.key?.replace("frc", "") || "";
-
             if (/^\d+$/.test(cleanTerm)) {
                 return teamNumber.startsWith(cleanTerm);
             }
-
             return (
                 name.includes(cleanTerm) ||
                 team.key.toLowerCase().includes(cleanTerm) ||
@@ -67,7 +65,7 @@ function filterTeams(term) {
         .map((team) => ({
             key: team.key,
             nickname: team.nickname,
-            teamNumber: `${team.key.replace("frc", "")}`,
+            teamNumber: team.key.replace("frc", ""),
         }));
 }
 
@@ -84,13 +82,12 @@ function handleSearch() {
 }
 
 watch(searchedTeam, (newVal) => {
-    if (!open.value) return;
-
+    console.log(newVal);
+    open.value = true;
     if (!newVal.trim()) {
         searchResults.value = [];
         return;
     }
-
     handleSearch();
 });
 
@@ -124,6 +121,10 @@ const handleYearChange = (year) => {
     setTeamToStore(searchedTeam.value, year);
 };
 
+const handleEnter = () => {
+    inputRef.value.blur();
+};
+
 onMounted(async () => {
     if (route.params.teamNumber) {
         searchedTeam.value = route.params.teamNumber;
@@ -137,7 +138,8 @@ onMounted(async () => {
             <TeamInput
                 v-model:open="open"
                 v-model="searchedTeam"
-                @keyup.enter="open = false"
+                @enter="handleEnter"
+                ref="input"
             />
             <YearSelect
                 :rookie-year="selectedTeamRookieYear"
@@ -150,8 +152,8 @@ onMounted(async () => {
             :items="searchResults"
             :loading="isLoading"
             :error="fetchError"
+            @keydown.enter="console.log('test')"
             @selectedValue="handleSearchListSelect"
-            @keyup.enter="open = false"
         />
     </Command>
 </template>
