@@ -120,10 +120,6 @@ const handleYearChange = (year) => {
     setTeamToStore(searchedTeam.value, year);
 };
 
-const handleEnter = () => {
-    inputRef.value.blur();
-};
-
 onMounted(async () => {
     if (route.params.teamNumber) {
         searchedTeam.value = route.params.teamNumber;
@@ -134,12 +130,7 @@ onMounted(async () => {
 <template>
     <Command>
         <div class="flex flex-row items-center justify-between gap-4 pr-3 pl-1">
-            <TeamInput
-                v-model:open="open"
-                v-model="searchedTeam"
-                @enter="handleEnter"
-                ref="input"
-            />
+            <TeamInput v-model:open="open" v-model="searchedTeam" ref="input" />
             <YearSelect
                 :rookie-year="selectedTeamRookieYear"
                 v-model="selectedTeamYear"
