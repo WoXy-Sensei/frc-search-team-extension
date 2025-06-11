@@ -14,11 +14,6 @@ defineEmits(["update:open", "enter"]);
 
 const inputEl = useTemplateRef("inputEl");
 
-defineExpose({
-    blur: () => {
-        console.log("test");
-    },
-});
 </script>
 
 <template>

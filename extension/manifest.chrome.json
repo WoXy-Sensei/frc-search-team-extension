@@ -8,7 +8,6 @@
     "default_popup": "index.html"
   },
   "default_locale": "en",
-  "permissions": ["storage"],
   "icons": {
     "16": "icons/icon.png",
     "32": "icons/icon.png",

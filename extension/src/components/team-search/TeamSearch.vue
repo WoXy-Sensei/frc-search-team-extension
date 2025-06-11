@@ -82,7 +82,6 @@ function handleSearch() {
 }
 
 watch(searchedTeam, (newVal) => {
-    console.log(newVal);
     open.value = true;
     if (!newVal.trim()) {
         searchResults.value = [];
@@ -152,7 +151,6 @@ onMounted(async () => {
             :items="searchResults"
             :loading="isLoading"
             :error="fetchError"
-            @keydown.enter="console.log('test')"
             @selectedValue="handleSearchListSelect"
         />
     </Command>
